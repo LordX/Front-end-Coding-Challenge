@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Somlako Admin -</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0" type="text/css" media="all">
+
+
+<style>
+
+header{width:100%}
+header ul.nav-top{width:100%  }
+ul.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #272F42;
+}
+
+li.nav-item {
+    float: left;
+}
+
+li.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+div.full-screen-gradient-img{
+background-image:url(assets/imgs/85934.jpg);
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+width:100%;
+}
+
+div.full-screen-gradient-img-fixed{
+padding-top:5%;
+background: -moz-linear-gradient(top, rgba(39,47,66,1) 0%, rgba(255,255,255,0) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(39,47,66,1) 0%,rgba(255,255,255,0) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(39,47,66,1) 0%,rgba(255,255,255,0) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+div.full-screen-img,div.gradient-top{
+width:100%;
+
+}
+.gradient-bottom
+{
+
+width:100%;
+}
+
+div.gradient-top{
+z-index:1;
+background: -moz-linear-gradient(top, rgba(39,47,66,1) 0%, rgba(255,255,255,0) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(39,47,66,1) 0%,rgba(255,255,255,0) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(39,47,66,1) 0%,rgba(255,255,255,0) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+div.gradient-bottom{
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(39,47,66,1) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(39,47,66,1) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(39,47,66,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.full-screen-img{
+z-index:0;
+background-image:url(assets/imgs/85934.jpg);
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ padding-bottom:10%;
+}
+.row{margin:0}
+.col-sm-12{margin:0;padding:0}
+
+.slide-show {
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(39,47,66,1) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(39,47,66,1) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(39,47,66,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+padding-bottom:7%;
+
+
+z-index:3
+}
+.panel-heading > h1
+{
+margin-top:5%;
+}
+
+.slide-show > .panel{
+padding-left:5%;
+}
+.rounded-circle {
+    border: 2px solid #FFF;
+	display: table;
+     margin: 0 auto;
+	
+}
+.nav-bottom{width:100%; }
+section{width:100%;height:400px }
+.tabs-cyan {
+    background-color: #272F42;
+	overflow: visible;
+}
+.classic-tabs.tabs-cyan li a.active{
+    border-color:#CC0000;
+}
+.classic-tabs li{
+    margin-right: 56px;
+	
+}
+.classic-tabs li:first-child {
+    margin-right: 56px;
+	
+}
+.btn {
+    background-color: #272F42;
+       font-size: .8rem;
+    padding: .85rem 2.13rem;
+    margin: 6px;
+    border-radius: 0px;
+    border: 0;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    white-space: normal!important;
+    word-wrap: break-word;
+    cursor: pointer;
+	    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0);
+	
+      
+}
+.btn:hover,.btn:focus {
+webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0), 0 4px 15px 0 rgba(0,0,0,0);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0), 0 4px 15px 0 rgba(0,0,0,0);
+}
+.dropdown .dropdown-menu {
+    background-color: #272F42;
+	
+}
+.dropdown-item:hover {
+  background-color: #E23943; 
+}
+#map
+{
+ width: 100%;
+   height: 400px;
+   background-color: grey;
+}
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-row > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row .thumbnail,
+.flex-row .caption {
+	flex-direction: column;
+	display: flex;
+	flex: 1 0 auto;
+	height: auto;
+	position: relative;
+}
+.flex-text {
+	flex-grow: 1;
+}
+.flex-row img {
+	min-width: 0;
+	width: 100%;
+}
+ </style> 
+</head>
+
+<body class="fixed-nav sticky-footer bg-wight" id="page-top">
+	<header>
+		<nav class="navbar-top z-depth-1-half">
+			<ul class="nav-list">
+			  <li class="nav-item"><a href="#home">IDEADATE</a></li>
+			  <li class="nav-item"><a href="#contact">Browse</a></li>
+			  <li class="nav-item"  style="float:right"><a href="#about">Profile</a></li>
+			</ul>
+		</nav>
+		
+		<div class="full-screen-gradient-img row-fluid clearfix">
+			<div class=" full-screen-gradient-img-fixed col-sm-12 row-fluid clearfix ">
+				<div class="slide-show col-lg-12 row" style="color:#FFF">
+					
+						<div class="rounded-img  col-lg-2">
+							<div class="image-rounded">
+								<img src="assets/imgs/t85934.jpg" class="rounded-circle image-responsive"></img>
+							</div>
+						</div>
+						<div class="panel col-lg-8">
+							   <div class="panel-heading"><h1>Date Night Restaurants</h1></div>
+								<div class="panel-body"><h4>!<small>Best Places for a date night in New York City </small></h4></div>
+								<div class="panel-footer"><h5>!<small>6M Followers</h5></small></div>
+						</div>
+						<div class="follow col-md-2">
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- Nav tabs -->
+			<div class="tabs-wrapper">
+			 
+				<ul class="nav classic-tabs tabs-cyan" role="tablist">
+					 <li class="nav-item">
+						 <div class="dropdown ">
+						<!--Trigger-->
+						<button class="btn  dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown primary</button>
+						<!--Menu-->
+						<div class="dropdown-menu dropdown-danger">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light active" data-toggle="tab" href="#panel51" role="tab">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" data-toggle="tab" href="#panel52" role="tab">Follow</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" data-toggle="tab" href="#panel53" role="tab">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" data-toggle="tab" href="#panel54" role="tab">Be awesome</a>
+					</li>
+				</ul>
+			</div>
+	</header>
+	<div class="container-fluid">
+			<!-- Tab panels -->
+		<div class="tab-content card ">
+			
+			<!--Panel 1-->
+			<div class="tab-pane fade in show active " id="panel51" role="tabpanel">
+				<div class=" row clearfix" >
+					<div class="cards col-8"> 
+					
+								<div class="flex-row row">
+									<div class="col-xs-6 col-sm-4 col-lg-3">
+										<div class="thumbnail ">
+															<img src="http://placehold.it/350x150">
+											<div class="caption">
+												<h3>Title</h2>
+												<p class="flex-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+												<p>
+													<a class="btn btn-primary" href="#">Link</a>
+												</p>
+											</div>
+											<!-- /.caption -->
+										</div>
+										<!-- /.thumbnail -->
+									</div>
+								
+								
+								
+									<div class="col-xs-6 col-sm-4 col-lg-3">
+										<div class="thumbnail ">
+															<img src="http://placehold.it/350x150">
+											<div class="caption">
+												<h3>Title</h2>
+												<p class="flex-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+												<p>
+													<a class="btn btn-primary" href="#">Link</a>
+												</p>
+											</div>
+											<!-- /.caption -->
+										</div>
+										<!-- /.thumbnail -->
+									</div>
+							
+								
+								
+									<div class="col-xs-6 col-sm-4 col-lg-3">
+										<div class="thumbnail ">
+															<img src="http://placehold.it/350x150">
+											<div class="caption">
+												<h3>Title</h2>
+												<p class="flex-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+												<p>
+													<a class="btn btn-primary" href="#">Link</a>
+												</p>
+											</div>
+											<!-- /.caption -->
+										</div>
+										<!-- /.thumbnail -->
+									</div>
+								</div>
+					
+					
+					
+					
+					</div>
+					<div class="col-4" id="map">
+					</div>
+					<script>
+						  function initMap() {
+							var uluru = {lat: -25.363, lng: 131.044};
+							var map = new google.maps.Map(document.getElementById('map'), {
+							  zoom: 4,
+							  center: uluru
+							});
+							var marker = new google.maps.Marker({
+							  position: uluru,
+							  map: map
+							});
+						  }
+						</script>
+				</div>
+			</div>
+			<!--/.Panel 1-->
+			<!--Panel 2-->
+			<div class="tab-pane fade" id="panel52" role="tabpanel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+			</div>
+			<!--/.Panel 2-->
+			<!--Panel 3-->
+			<div class="tab-pane fade" id="panel53" role="tabpanel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+			</div>
+			<!--/.Panel 3-->
+			<!--Panel 4-->
+			<div class="tab-pane fade" id="panel54" role="tabpanel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+			</div>
+			<!--/.Panel 4-->
+
+			
+		</div>
+		
+	</div>
+ <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.4.0'></script>
+ <script   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzK2LpEWCKf2icIYOVuduGPcSUCD_DYGg&callback=initMap"> </script>
+</body>
+
+</html>
