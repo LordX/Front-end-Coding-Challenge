@@ -19,7 +19,7 @@
 body{font-family: "Source Sans Pro",Arial;}
 /* styling a responsive header*/
 header{width:100%; background-color: #272F42;}
-header .navbar-top{width:100%;min-width: 445px;height:80px;border-bottom: 2px solid rgba(38, 42, 48, 0.29);}
+header .navbar-top{width:100%;height:80px;border-bottom: 2px solid rgba(38, 42, 48, 0.29);}
 .navbar-top ul{list-style-type: none;} 
 li.nav-item { float: left; vertical-align: center}
 
@@ -58,7 +58,7 @@ li.nav-item > a {
 	.navbar-top ul:first-child{width: 40%;float: left;}
 	.navbar-top ul:nth-child(2){width:60%;float: right ;position: absolute;right: 10px;}
 	}
-
+	
 @media (max-width: 870px){
 	.navbar-top ul:first-child{width: 75%;float: left;}
 	.navbar-top ul:nth-child(2){width: 25%;float: right ;position: absolute;right: 10px;}
@@ -67,6 +67,14 @@ li.nav-item > a {
 	.navbar-top > ul:last-child.nav-list li:nth-child(2) {padding-top: 0;padding-left: 5px;padding-right: 27px;}
 	.navbar-top > ul:last-child.nav-list li:nth-child(3) {padding-top: 18px;padding-left: 5px;padding-right: 27px;}
 }
+@media (max-width: 445px){ 
+	.navbar-top ul:first-child li{float: left;margin-left:10px}
+	.navbar-top ul:first-child{padding-right: 0px}
+ul:last-child.nav-list li:nth-child(3) { padding-top: 6px; padding-left: 5px; padding-right: 13px;
+}
+ul:last-child.nav-list li:nth-child(2) {padding-top: 0;padding-left: 5px;padding-right: 13px;
+}
+	}
 	
 
 /* styling a the gradient affects on top of the background & bottom*/
@@ -187,7 +195,7 @@ a:hover, a:focus {
 		<nav class="navbar-top z-depth-1-half">
 			<ul class="nav-list left">
 			  <li class="nav-item"><a href="#home"><span style="color:#E23943">IDEA</span>DATE</a></li>
-			  <li class="nav-item"  style="float:right">
+			  <li class="nav-item"  >
 				</div class="dropdown">
 							<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							browse	
@@ -236,7 +244,7 @@ a:hover, a:focus {
 									<div class="panel-footer"><h5 style="font-weight: normal;text-align:center"><small>6M Followers</h5></small></div>
 							</div>
 						</div>
-						<div class="follow col-md-2"style="margin: 11px auto;" >
+						<div class="follow col-md-2"style="margin: 11px auto; height:60px" >
 							
 								<a href="#" class="costumbutton"style="margin:auto">Follow</a>
 								
